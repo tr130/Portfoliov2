@@ -1,0 +1,243 @@
+.slide {
+    height: 120vh;
+    width: 100vw;
+    position: sticky;
+    bottom: 0;
+    
+        left: 0;
+    overflow: -moz-scrollbars-none;
+
+
+    @for $i from 0 through 20 {
+        &:nth-child(#{$i}){
+            z-index: -1 * $i;
+        }
+    }
+
+    &_text {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        z-index: inherit;
+    }
+}
+
+.overlay {
+    z-index:0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    color: rgb(255, 254, 254);
+    height: 110vh;
+    width: 100vw;
+    position: sticky;
+    bottom: -110%;
+
+    &_text {
+        padding: 1rem 2rem 3rem 2rem;
+        position: relative;
+        top: 20%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.562);
+    }
+
+    a {
+        background-color: black;
+        padding: 1rem;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            background-color: #FF0035;
+        }
+
+        span {
+            margin: 0;
+            line-height: 1;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        filter: blur(4px);
+    }
+}
+
+.wipe {
+    height: 100vh;
+    width: 100vw;
+    position: sticky;
+    bottom: 0;
+    
+        left: 0;
+    overflow: -moz-scrollbars-none;
+
+
+    @for $i from 0 through 20 {
+        &:nth-child(#{$i}){
+            z-index: -1 * $i;
+        }
+    }
+}
+
+.info{
+    background-color: black;
+    height: 120vh;
+width: 100vw;
+//position: sticky;
+background-attachment: fixed;
+bottom: -120%;
+    top: 0;
+    z-index: 0;
+
+    &_text {
+        padding: 1rem 2rem 3rem 2rem;
+        position: relative;
+        color: white;
+        top: 15%;
+        a {
+            color: #00aaaa;
+            text-decoration: none;
+            a:visited {
+                color: #00aaaa
+            }
+        }
+    }
+}
+
+#intro {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &_text {
+        position: relative;
+        //top: 30%;
+    }
+
+    &_icon {
+        margin-top: 20vh;
+        align-self: center;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        margin: 0;
+    }
+
+    h3{
+        text-align: center;
+        font-style: italic;
+    }
+}
+
+#project1 {
+    background: url(../img/car_mgmt.jpg) center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay1::before {
+    background: url(../img/car_mgmt.jpg) center;
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+#wipe1 {
+    background-image: url(../img/pexels-markus-spiske-2061168.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#project2 {
+    background: url(../img/nfi-wine-merchants.jpg) center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay2 {
+    .overlay_text {
+        color: white;
+    }
+}
+
+#overlay2::before {
+    background: url(../img/nfi-wine-merchants.jpg) center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#wipe2 {
+    background-image: url(../img/pexels-digital-buggu-374563.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#project3 {
+    background: url(../img/netmatters.jpg) center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay3 {
+    .overlay_text {
+        color: white;
+    }
+    
+}
+
+#overlay3::before {
+    background: url(../img/netmatters.jpg) center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#wipe3 {
+    background-image: url(../img/pexels-sabrina-gelbart-249798.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#project4 {
+    background: url(../img/junkwars.jpg) center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay4 {
+    .overlay_text {
+        color: #00aaaa;
+    }
+
+    a{
+        color: #00aaaa;
+        &:hover {
+            background-color: #00aaaa;
+            color: black;
+        }
+    }
+}
+
+#overlay4::before {
+    background: url(../img/junkwars.jpg) center;
+    background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
