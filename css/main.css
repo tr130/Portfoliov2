@@ -605,11 +605,11 @@ template {
   background-color: black;
   color: white;
   font-family: monospace;
-  height: 140vh;
-  bottom: -20%;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 0;
 }
 
 #intro_text {
