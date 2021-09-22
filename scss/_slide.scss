@@ -88,6 +88,7 @@
     background-color: black;
     height: 120vh;
 width: 100vw;
+line-height: 1.5;
 //position: sticky;
 background-attachment: fixed;
 bottom: -120%;
@@ -99,6 +100,8 @@ bottom: -120%;
         position: relative;
         color: white;
         top: 15%;
+        max-width: 600px;
+        width: 90%;
         a {
             color: #00aaaa;
             text-decoration: none;
